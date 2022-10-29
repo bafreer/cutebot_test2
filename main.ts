@@ -1,5 +1,5 @@
 let sonar2 = 0
-cuteBot.forward()
+cuteBot.motors(50, 50)
 basic.forever(function () {
     sonar2 = cuteBot.ultrasonic(cuteBot.SonarUnit.Centimeters)
     if (sonar2 > 2 && sonar2 < 15) {
@@ -11,6 +11,6 @@ basic.forever(function () {
         cuteBot.motors(-31, 0)
         basic.pause(500)
     } else {
-        cuteBot.forward()
+        cuteBot.motors(50, 50)
     }
 })
